@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt                               #Импорт библиотек
 import numpy as np
 
+
 """
 Функция rotation_3d производит вращение 3д графика в 2 режимах:
 1 режим - вращение относительно оси Z;
@@ -11,10 +12,10 @@ import numpy as np
 
 def rotation_3d(ax, mode):
     if mode == 1:
-        for angle in range(0, 360 + 1):
-            angle_norm = (angle + 180) % 360 - 270
+        for angle in range(0, 180 + 1):
+            angle_norm = (angle + 180) % 360 - 180
             rotation1 = 0
-            if angle <= 360:
+            if angle <= 180:
                 rotation1 = angle_norm
             ax.view_init(azim=rotation1)
             plt.draw()
