@@ -56,4 +56,3 @@ def start_sns_items():                                     #Функция вы�
     ax2.set_zlabel('User ID')
     plt.title('User Behavior Class by Age', fontsize=16)
     plt.show()
-
