@@ -40,12 +40,16 @@ def choice_items():
                             break
                         elif vote == 0:
                             break
+                        else:
+                            print("Неверное значение, попробуйте еще раз")
                     except ValueError:
                         print('Значение неверное, повторите ввод')
 
             elif vote == 0:
-                print('Спасибо за просмотр')
+                print('\n         -->   Спасибо за просмотр  <--')
                 break
+            else:
+                print("Неверное значение, попробуйте еще раз")
         except ValueError:
             print('Значение неверное, повторите ввод')
 

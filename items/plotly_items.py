@@ -95,27 +95,27 @@ def start_go_items():            #Функция запуска визуализ
 
 
 def start_px_items():       #Функция запуска визуализаций "express"
-    fig6 = px.bar(
-        x=r.device[:25],
-        y=r.users[:25],
-        hover_data=[r.gender[:25], r.age[:25]],
-        color=r.data_us[:25],
-        labels={
+    fig6 = px.bar(                                          #График "Столбцы"
+        x=r.device[:25],                                    #Ось Х - модель смартфона
+        y=r.users[:25],                                     #Ось У - порядковый номер пользователя
+        hover_data=[r.gender[:25], r.age[:25]],   #Данные при наведении - пол и возраст
+        color=r.data_us[:25],                           #Цвет отображает использование данных
+        labels={                                             #Название надписей
             'x': 'Device Model',
             'y': 'User ID',
             'color': 'Data Usage (MB/day)',
             'hover_data_0': 'Gender',
             'hover_data_1': 'Age'
-                }
+                }                                         #
     )
     fig6.show()
 
-    fig7 = px.line(
-        x=r.users[:17],
-        y=r.data_us[:17],
-        color=r.gender[:17],
-        title='Data Usage by users',
-        hover_data=[r.device[:17], r.OS[:17]],
+    fig7 = px.line(                                       #График "Линии"
+        x=r.users[:17],                                  #Ось Х - Порядковый номер пользователя
+        y=r.data_us[:17],                              #Ось У - использование данных
+        color=r.gender[:17],                           #Цвет отображает пол
+        title='Data Usage by users',                #Название графика
+        hover_data=[r.device[:17], r.OS[:17]],   #Данные при наведении - модель смартфона и ОС
         labels={
             'x': 'User ID',
             'y': 'Data Usage (MB/day)',
@@ -126,35 +126,35 @@ def start_px_items():       #Функция запуска визуализац�
     )
     fig7.show()
 
-    fig8 = px.pie(
-        values=r.num_app[:3],
-        names=r.device[:3],
+    fig8 = px.pie(                                                     #График "Пирог"
+        values=r.num_app[:3],                                    #Количество приложений
+        names=r.device[:3],                                         #Название смартфона
         title='Number of Apps Installed by devices',
-        hole=.3,
-        color_discrete_sequence=px.colors.sequential.deep,
+        hole=.3,                                                                #Величина отверстия внутри графика
+        color_discrete_sequence=px.colors.sequential.deep,    #Цветовая гамма
         hover_data=[r.OS[:3]],
         labels={'hover_data_0': 'Operating System'}
     )
     fig8.update_traces(
-        textposition='inside',
-        textinfo='value',
-        textfont_size=21
+        textposition='inside',                          #Позиция текста - внутри
+        textinfo='value',                                #Текст - количество приложений
+        textfont_size=21                              #Размер букв
     )
     fig8.show()
 
-    fig9 = px.scatter(
+    fig9 = px.scatter(                          #График рассеяния
         x=r.num_app,
         y=r.app_us,
-        animation_frame=r.device,
-        animation_group=r.users,
-        size=r.screen,
-        color=r.UBC,
-        log_x=True,
-        log_y=True,
-        symbol=r.OS,
-        facet_col=r.gender,
-        size_max=31,
-        hover_data=[r.age],
+        animation_frame=r.device,        #Кадр анимации - модель смартфона
+        animation_group=r.users,         #Группа анимации - пользователи
+        size=r.screen,                           #Размер отображает время работы экрана
+        color=r.UBC,                             #Цвет отображает класс поведения пользователя
+        log_x=True,  #Логарифмическое отображение
+        log_y=True,  #по осям координат Х и У
+        symbol=r.OS,                            #Форма отображает операционную систему
+        facet_col=r.gender,                   #Деление графика на 2 по полу
+        size_max=31,                          #Максимальный размер круга
+        hover_data=[r.age],                  #Добавление данных при наведении
         labels={
                     'x': 'Number of Apps Installed',
                     'y': 'App Usage Time (min/day)',
@@ -168,14 +168,14 @@ def start_px_items():       #Функция запуска визуализац�
     )
     fig9.show()
 
-    fig10 = px.scatter_3d(
+    fig10 = px.scatter_3d(                #График рассеяния в 3D варианте
         x=r.num_app,
         y=r.app_us,
-        z=r.age,
-        color=r.age,
-        size=r.UBC,
+        z=r.age,                                 #Добавляется ось Z - возраст
+        color=r.age,                            #Цвет отображает возраст
+        size=r.UBC,                             #Размер отображает класс поведения пользователя
         size_max=40,
-        hover_name=r.device,
+        hover_name=r.device,              #Информация при наведении - модель смартфона
         labels={
                         'x': 'Number of Apps Installed',
                         'y': 'App Usage Time (min/day)',
