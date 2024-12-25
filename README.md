@@ -1,6 +1,6 @@
 # Comparison-of-libraries
 
-Анализ и сравнение построения графиков 
+Сравнение построения графиков 
 для визуализации данных при помощи 
 различных библиотек Python.
 
@@ -22,7 +22,7 @@ git clone https://github.com/kpenkuu-4au/Comparison-of-libraries.git
 cd Comparison-of-libraries
 
 
-3. Создайте виртуальное окружение (если используется):  
+3. Создайте виртуальное окружение:  
 
 python -m venv venv
 source venv/bin/activate  # Для macOS/Linux
@@ -37,7 +37,8 @@ pip install -r requirements.txt
 
 Запустите основной скрипт:
 
-python main.py и следуйте указаниям.
+python main.py 
+Cледуйте указаниям в терминале.
 
 ## Основной функционал
 
