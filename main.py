@@ -1,5 +1,6 @@
-from items import (matplotlib_items as plt_items,
-                   seaborn_items as sns_items, plotly_items as p_items)
+from items import matplotlib_items as plt_items
+from items import seaborn_items as sns_items
+from items import plotly_items as p_items
 
 
 def choice_items():
