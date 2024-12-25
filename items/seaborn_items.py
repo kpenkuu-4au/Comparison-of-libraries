@@ -3,7 +3,7 @@ import seaborn as sns
 from files import data_read as r
 
 
-def start_sns_items():
+def start_sns_items():                                     #Функция вывода визуализаций "seaborn"
     fig1 = plt.figure(figsize=(11, 5), dpi=120)       #Создание изображения
     sns.barplot(                                                #График "Столбцы
         x=r.num_app[:10],      # Данные импорта

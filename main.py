@@ -1,5 +1,5 @@
 from items import (matplotlib_items as plt_items,
-                   seaborn_items as sns_items)
+                   seaborn_items as sns_items, plotly_items as p_items)
 
 
 def choice_items():
@@ -22,6 +22,27 @@ def choice_items():
             elif vote == 2:
                 print("После ознакомления с графиком закройте окно")
                 sns_items.start_sns_items()
+            elif vote == 3:
+                while True:
+                    print("Выберите вариант визуализаций:")
+                    print("Plotly Express (введите '1')")
+                    print("Plotly Graph Objects (введите '2')")
+                    print("Назад к меня введите '0")
+                    try:
+                        vote = int(input('Ваш выбор -> '))
+                        if vote == 1:
+                            print("Визуализации графиков отобразятся в браузере")
+                            p_items.start_px_items()
+                            break
+                        elif vote == 2:
+                            print("Визуализации графиков отобразятся в браузере")
+                            p_items.start_go_items()
+                            break
+                        elif vote == 0:
+                            break
+                    except ValueError:
+                        print('Значение неверное, повторите ввод')
+
             elif vote == 0:
                 print('Спасибо за просмотр')
                 break

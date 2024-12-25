@@ -5,7 +5,7 @@ import pandas as pd                                    #Импорт библи�
 содержит статистику использования смартфонов.
 """
 
-df = pd.read_csv('../data/user_behavior_dataset.csv')
+df = pd.read_csv('data/user_behavior_dataset.csv')
 
 colors = [                                                     #Назначение цветов
     'darkturquoise', 'khaki',

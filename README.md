@@ -44,7 +44,7 @@ python main.py и следуйте указаниям.
 Предоставляется выбор просмотра примеров
 визуализаций в модулях "matplotlib_items"(функция "start_plt_items"), 
 "seaborn_items" (функция "start_sns_items"),
-"plotly_items" (функция "start_gopx_items"). 
+"plotly_items" (функции "start_go_items" и "start_px_items" ). 
 С помощью модуля "data_read" производится 
 чтение файлов из папки "data". В модуле "function" находятся 
 все необходимые функции.
@@ -62,4 +62,4 @@ python main.py и следуйте указаниям.
 
 ## Автор проекта
 
-Павел Колчанов, джуниор python-разработчик
+Павел Колчанов, Junior python-разработчик

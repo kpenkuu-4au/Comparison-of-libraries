@@ -4,7 +4,7 @@ from files import data_read as r, function as f
 import time
 
 
-def start_plt_items():
+def start_plt_items():                               #Функция вывода визуализаций "matplotlib"
     fig1 = plt.figure(figsize=(8, 5), dpi=80)                   #Создаем изображение
     plt.bar(                                                               #График "Столбцы"
         r.device[:10],                                                    #Используем данные из
