@@ -28,7 +28,7 @@ def choice_items():
                     print("Выберите вариант визуализаций:")
                     print("Plotly Express (введите '1')")
                     print("Plotly Graph Objects (введите '2')")
-                    print("Назад к меня введите '0")
+                    print("Назад к меню введите '0")
                     try:
                         vote = int(input('Ваш выбор -> '))
                         if vote == 1:
