@@ -16,17 +16,21 @@
 
 git clone https://github.com/kpenkuu-4au/Comparison-of-libraries.git
 
+<image src="/images/gitclone.png" alt="Пример ввоДа команды в терминале">
 
 2. Перейдите в папку проекта:
 
 cd Comparison-of-libraries
 
+<image src="/images/cd_dir.png" alt="Пример ввода команды в терминале">
 
 3. Создайте виртуальное окружение:  
 
 python -m venv venv
-source venv/bin/activate  # Для macOS/Linux
+
 venv\Scripts\activate  # Для Windows
+
+source venv/bin/activate  # Для macOS/Linux
 
 
 4. Установите зависимости:  

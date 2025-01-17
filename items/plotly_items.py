@@ -3,7 +3,10 @@ import plotly.express as px
 from files import data_read as r
 
 
-def start_go_items():            #Функция запуска визуализаций "graph objects"
+def start_go_items():
+    """
+    Выводит визуализации с помощью "plotly graph objects"
+    """
     fig1 = go.Figure(
         [go.Bar(                        #График "Столбцы"
             x=r.device[:13],          #Ось Х - название смартфона
@@ -94,7 +97,10 @@ def start_go_items():            #Функция запуска визуализ
     fig5.show()                                    #Вывод график (вращается при помощи мыши)
 
 
-def start_px_items():       #Функция запуска визуализаций "express"
+def start_px_items():
+    """
+    Выводит визуализации с помощью "plotly express"
+    """
     fig6 = px.bar(                                          #График "Столбцы"
         x=r.device[:25],                                    #Ось Х - модель смартфона
         y=r.users[:25],                                     #Ось У - порядковый номер пользователя

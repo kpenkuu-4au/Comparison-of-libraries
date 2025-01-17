@@ -1,11 +1,11 @@
 import pandas as pd                                    #Импорт библиотеки
 
+
+df = pd.read_csv('data/user_behavior_dataset.csv')
 """
 Чтение данных из файла. Представленный файл "user_behavior_dataset.csv"
 содержит статистику использования смартфонов.
 """
-
-df = pd.read_csv('data/user_behavior_dataset.csv')
 
 colors = [                                                     #Назначение цветов
     'darkturquoise', 'khaki',
@@ -15,7 +15,9 @@ colors = [                                                     #Назначен
     'crimson', 'yellow'
 ]
 
-"""Создание переменных для данных, извлеченных из файла"""
+"""
+Создание переменных для данных, извлеченных из файла
+"""
 
 users = df['User ID']                                  #Порядковый номер пользователя
 device = df['Device Model']                         #Модель смартфона

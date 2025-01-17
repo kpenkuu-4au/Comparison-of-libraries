@@ -1,11 +1,13 @@
 import matplotlib.pyplot as plt                                     #Импорт библиотек
 import matplotlib.animation as animation
 from files import data_read as r, function as f
-import time
 
 
-def start_plt_items():                               #Функция вывода визуализаций "matplotlib"
-    fig1 = plt.figure(figsize=(8, 5), dpi=80)                   #Создаем изображение
+def start_plt_items():
+    """
+    Выводит визуализации с помощью библиотеки "matplotlib"
+    """
+    fig1 = plt.figure(figsize=(8, 5), dpi=80)                   #Создание изображения
     plt.bar(                                                               #График "Столбцы"
         r.device[:10],                                                    #Используем данные из
         r.data_us[:10],                                                 #модуля "data_read"

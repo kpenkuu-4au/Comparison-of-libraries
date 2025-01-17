@@ -4,6 +4,9 @@ from items import plotly_items as p_items
 
 
 def choice_items():
+    """
+    Выводит в консоль меню взаимодействия с пользователем
+    """
     while True:
         print('\t ______________________________________', sep='', end='\n')
         print('\t| Выберите серию примеров визуализаций |')
