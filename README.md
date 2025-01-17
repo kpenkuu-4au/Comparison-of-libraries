@@ -16,7 +16,7 @@
 
 git clone https://github.com/kpenkuu-4au/Comparison-of-libraries.git
 
-<image src="/images/gitclone.png" alt="Пример ввоДа команды в терминале">
+<image src="/images/gitclone.png" alt="Пример ввода команды в терминале">
 
 2. Перейдите в папку проекта:
 
@@ -28,21 +28,32 @@ cd Comparison-of-libraries
 
 python -m venv venv
 
+<image src="/images/venv.png" alt="Пример ввода команды в терминале">
+
 venv\Scripts\activate  # Для Windows
 
 source venv/bin/activate  # Для macOS/Linux
+
+<image src="/images/activate.png" alt="Пример ввода команды в терминале">
 
 
 4. Установите зависимости:  
 
 pip install -r requirements.txt
 
+<image src="/images/req.png" alt="Пример ввода команды в терминале">
+
 ## Использование проекта
 
 Запустите основной скрипт:
 
 python main.py 
-Cледуйте указаниям в терминале.
+
+<image src="/images/main.png" alt="Пример ввода команды в терминале">
+
+Cледуйте указаниям в терминале:
+
+<image src="/images/menu.png" alt="Пример ввода команды в терминале">
 
 ## Основной функционал
 
